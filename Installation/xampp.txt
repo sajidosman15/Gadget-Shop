@@ -1,0 +1,20 @@
+C:\xampp\php\php.ini file
+Search for [mail function] in php.ini file comment all things and paste this code
+
+SMTP=smtp.gmail.com
+smtp_port=465
+sendmail_from = undercovermessage@gmail.com
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+
+-----------------------------------------------------
+
+C:\xampp\sendmail\sendmail.ini file
+Search for [sendmail] in sendmail.ini file comment all things and paste this code
+
+smtp_server=smtp.gmail.com
+smtp_port=465
+error_logfile=error.log
+debug_logfile=debug.log
+auth_username=undercovermessage@gmail.com
+auth_password=August12*
+force_sender=undercovermessage@gmail.com

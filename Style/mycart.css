@@ -1,0 +1,183 @@
+.shopping-info{
+    margin-bottom: 20px;
+}
+
+.confirm {
+    margin: 1% 2%;
+    width: 96%;
+
+}
+
+.confirm a{
+    width: 100%;
+    font-weight: bold;
+}
+
+
+.blank-box {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blank-box i {
+    display: block;
+    font-size: 200px;
+    color: orange;
+}
+
+.blank-box p {
+    color: black;
+    margin-top: 20px;
+    font-size: 28px;
+    font-family: "STIX Two Text";
+}
+
+.fa-minus-circle{
+    font-size: 25px;
+    color: red;
+
+}
+
+
+/* order details code start here */
+
+.order-details{
+    margin-top: 80px;
+}
+
+.page-title{
+    font-family: "STIX Two Text";
+    font-weight: bold;
+    padding: .5% 2%;
+    border: 2px solid rgb(231, 231, 231);
+    background-color: rgb(247, 247, 247);
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0,.1);
+    padding: 1% 0%;
+    align-items: flex-start;
+    border: 2px solid rgb(231, 231, 231);
+}
+
+.background-style{
+    background-color: white;
+    border: 2px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/*.customer-info h6,*/
+.shopping-info h6{
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "STIX Two Text";
+    margin-bottom: 20px;
+    padding-left: 2%;
+}
+
+
+
+.shopping-info{
+    width: 80%;
+    margin-left: 1.5%;
+}
+
+/* ORDER LIST STARTS HERE */
+
+.order-title{
+    display: flex;
+    align-items: center;
+    margin: 2% 2% 0% 2%;
+    border: 1px solid black;
+    text-align: center;
+    font-family: "Fjalla One";
+    color: black;
+    font-size: 17px;
+    background-color: rgb(80, 154, 223);
+}
+
+.image{
+    width: 15%;
+}
+
+.image img{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 110px;
+    background-color: white;
+}
+
+.pname{
+    width: 30%;
+    padding:5px 6px;
+}
+.quantity{
+    width: 10%;
+    padding:5px 3px;
+}
+.uprice{
+    width: 15%;
+    padding:5px 3px;
+}
+.tlprice{
+    width: 20%;
+    padding:5px 3px;
+}
+.remove{
+    width: 10%;
+    padding:5px 3px;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    margin: 0% 2% 0% 2%;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    font-family: "Merriweather"; 
+    color: black;
+    font-size: 15px;
+}
+
+
+@media(max-width:700px) {
+
+    .details{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .background-style{
+        width: 100%;
+    }
+
+    .shopping-info{
+        margin-left: 0%;
+    }
+    .order-title div{
+        font-size: 12px;
+    }
+    .products div{
+        font-size: 12px;
+    }
+
+    #confirm2{
+        width: 70%;
+    }
+    #confirm{
+        width: 60%;
+    }
+}

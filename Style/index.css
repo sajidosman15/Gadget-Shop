@@ -1,0 +1,197 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  background: #4e54c8;
+}
+
+.OurTeam {
+  margin-bottom: 2rem;
+}
+
+/* Banner start */
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carrosel-img {
+  height: 250px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.orange-bg {
+  background-color: rgba(133, 193, 233);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.carousel-item {
+  padding: 5px 8px;
+}
+
+.price {
+  color: #FF136F;
+}
+
+.bars {
+  font-size: 20px;
+  display: block !important;
+  color: black;
+}
+
+/* Banner end */
+
+/* SmallCard start */
+
+.cat1, .cat2, .cat3, .cat4 {
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.cat1 {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.cat2 {
+  background-color: orchid;
+  border-radius: 10px;
+}
+
+.cat3 {
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.cat4 {
+  background-color: #48C9B0;
+  border-radius: 10px;
+}
+
+.categories {
+  color: white;
+}
+
+.categories img {
+  width: 10rem;
+  height: 9rem;
+}
+
+/* SmallCard end  */
+
+/* NAVBAR START */
+
+.manu {
+  margin-left: 7rem;
+  font-size: 19px;
+  margin-bottom: 2rem;
+}
+
+/* NAVBAR END */
+
+/* Card start */
+
+.cart {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+i {
+  margin-right: 0.6rem;
+}
+
+.card {
+  width: 18rem;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+  transition: .7s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+/* Card end */
+
+/* contact starts */
+
+#contact {
+  padding: 2% 10%;
+  background: #3C1874;
+}
+
+.form-group label {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+/* contact ends */
+
+/*********** Feature CSS **********/
+
+.feature {
+  position: relative;
+  background-color: #818181;
+  margin-bottom: 2rem;
+}
+
+.feature .feature-col {
+  margin-bottom: 30px;
+}
+
+.feature .feature-content {
+  position: relative;
+  height: 100%;
+  padding: 30px 2px;
+  text-align: center;
+  background: white;
+  margin: 1rem;
+  /* box-shadow: 5px 5px 10px black; */
+  border: 2px solid white;
+}
+
+.feature .feature-content i {
+  color: #FF6F61;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.feature .feature-content h2 {
+  font-size: 18px;
+}
+
+.feature .feature-content p {
+  font-size: 15px;
+  margin: 0;
+}
+
+/*--------------------------------------- Columns -----------------------------------*/
+
+.fourth {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.brk {
+  margin-top: 100px;
+  background-image: linear-gradient(to right, rgba(250, 152, 152, 0), rgb(0, 204, 255));
+}
+
+@media(max-width:700px) {
+  .card{
+    width: 13rem;
+  }
+}

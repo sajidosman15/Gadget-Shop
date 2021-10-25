@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0px;
+    list-style-type: none;
+}
+
+input::-webkit-input-placeholder {
+    color: black; /*Change the placeholder color*/
+    opacity: 0.6; /*Change the opacity between 0 and 1*/
+}
+
+/* head code starts here */
+
+.head{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    background-color: rgb(25, 127, 187);
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding: 0% 4%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin-left: 4%; */
+    /* width: 55%; */
+}
+
+.bars{
+    font-size: 23px;
+    display: block;
+    font-weight: bolder;
+    color: rgb(208, 255, 0) !important;
+}
+
+.logo h2{
+    font-size: 40px;
+    font-family: "Lobster";
+    color: white;
+    margin: 0px 20px;
+    margin-bottom: 7px;
+}
+
+.logo img{
+    height: 45px;
+    width: 70px;
+    border-radius: 0px;
+}
+
+.search,.search-hidden{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* width: 22%; */
+}
+
+.search form input,.search-hidden form input{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: white;
+    margin:0px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: black;
+    font-size: 20px;
+    text-indent: 10px;
+    border:none !important;
+    font-family: "Poppins";
+}
+.search form, .search-hidden form{
+    display: flex;
+}
+
+.search form button,.search-hidden form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: orange;
+    height: 45px;
+    width: 45px;
+    margin:0px;
+    font-size: 20px;
+    color: white;
+}
+
+.search form button i,.search-hidden form button i{
+    margin-right: 0px;
+}
+
+
+.head .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 45px;
+    width:20%;
+    color: white;
+    font-family: "Noto Serif" !important;
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.head .buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 48%;
+    margin: 0% 2%;
+    height: 45px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.head .buttons a i{
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+.my-cart{
+    background-color: rgba(1, 119, 40, 0.788);
+}
+
+.logout{
+    background-color: rgb(216, 20, 20);
+}
+.logout:hover,.my-cart:hover{
+    transform: scale(1.05);
+}
+
+/* hidden section */
+#three-dot{
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+
+.hidden-search{
+    font-size: 20px;
+    color: white;
+    margin-right: 30px;
+    display: none;
+}
+
+.search-hidden{
+    position: fixed;
+    top:75px;
+    left:10px;
+    right: 10px; 
+    display: none;
+}
+
+.search-hidden input{
+    border: 2px solid orange !important;
+}
+
+.hidden-buttons{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    width:40%;
+    color: white;
+    font-family: "Noto Serif" !important;
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    position: fixed;
+    top:70px;
+    right: 0px;
+}
+
+.hidden-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    color: white;
+    margin:0% 5%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hidden-buttons a i{
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+.hidden-buttons .my-cart{
+    background-color: rgb(18, 102, 46);
+}
+.hidden-buttons .logout:hover,.hidden-buttons .my-cart:hover{
+    transform: scale(1.03);
+}
+
+/* sidebar code starts here */
+
+.sidebar{
+    position: fixed;
+    width: 20%;
+    top: 70px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(25, 127, 187);
+    display: none;
+    z-index: 999;
+    box-shadow: 7px 4px 5px 0 rgba(0, 0, 0, 0.4);
+    border-top: 1px solid black;
+}
+
+.slide-list{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.slide-list:hover a{
+    transform: scale(1.05);
+}
+
+.slide-list:hover,.sub-list li:hover{
+    border-bottom: 1px solid orange;
+}
+
+.slide-list a{
+    text-decoration: none !important;
+    width: 100%;
+    color: white !important;
+    font-size: 20px;
+    padding: 5%;
+    font-family: "STIX Two Text";
+    transition: all 0.3s ease;
+}
+
+.slide-list a i{
+    font-size: 17px;
+    width: 14%;
+}
+
+.sub-list{
+    border-bottom: 1px solid black;
+    display: none;
+}
+
+.sub-list li{
+    width: 85%;
+    height: 33px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.sub-list li:hover a{
+    transform: scale(1.05);
+}
+
+.sub-list li a{
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-family: "STIX Two Text";
+    transition: all 0.3s ease;
+}
+
+.sub-list li a i{
+    font-size: 14px;
+    width: 10%;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+/* Responsive code */
+
+@media (max-width: 1100px) {
+    .head .buttons{
+        width: 30%;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .hidden-search{
+        display: block;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .logo{
+        width: 70%;
+    }
+
+    
+    .logo h2{
+        font-size: 35px;
+        margin: 0px 10px;
+    }
+    
+    .logo img{
+        height: 40px;
+        width: 60px;
+    }
+
+    .head .buttons a{
+        display: none;
+    }
+
+    #three-dot{
+        display: block;
+    }
+
+
+    .sidebar{
+        width: 50%;
+        display: none;
+    }
+}

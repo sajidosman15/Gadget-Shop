@@ -1,0 +1,198 @@
+
+body{
+    background-color: #f2f4f8;;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.border{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.pass-text{
+    font-size: 32px;
+    height: 40px;
+    display: inline-block;
+}
+
+.container{
+    height: 70vh;
+    width: 100%;
+    margin-top: 120px;
+}
+.row{
+    height: 75%;
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    box-shadow: 5px 10px 20px #aaaaaa;
+    display: flex;
+    justify-content: center;
+}
+.image{
+    width: 30%;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+.details{
+    height: 100%;
+    width: 70%;
+    text-align: center;
+}
+.details h3{
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1;
+}
+.circle-img{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.circle-img img{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin: auto;
+}
+.user-name input{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    width: 190px;
+}
+.details-box{
+    line-height: 1.5;
+    display: flex;
+    flex-basis: 50%;
+    height: auto;
+text-align: left;
+}
+.information{
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+.button{
+    height: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.edit-btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: red;
+    border-color: red;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+
+}
+input{
+    border: none;
+    height: 20px;
+    font-size: 14px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.divider{
+    height: 3px;
+    width: 300px;
+    display: inline-block;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5); 
+}
+
+
+
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .row{
+        width: 80%;
+        height: 85%;
+    }
+   
+  }
+
+
+@media (min-width: 501px) and (max-width: 767px) {
+
+    .row{
+        width: 90%;
+        height: auto;
+    }
+    .information input{
+        background-color: transparent;
+    }
+    .image{
+        margin-top: 45px;
+        margin-left: 10px;
+    }
+    .circle-img{
+        height: 100px;
+        width: 100px;
+    }
+    .user-name input{
+        background-color: transparent;
+        margin-bottom: 30px;
+    }
+    .button{
+        margin-bottom: 20px;
+    }
+  }
+
+ 
+
+@media (min-width: 320px) and (max-width: 500px) {
+  
+    .container{
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .row{
+        height: auto;
+        flex-direction: column;
+        width: 90%;
+    }
+    .image{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .details{
+        margin: auto;
+        width: 100%;
+    }
+    .information input{
+        background-color: transparent;
+    }
+    .button{
+        margin-bottom: 20px;
+    }
+  }
+
+  

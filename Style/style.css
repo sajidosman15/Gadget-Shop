@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Images/background.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    width: 35%;
+    margin-top: 2%;
+    padding: 20px 40px 20px 20px;
+}
+
+.card .logo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.fields .box{
+    margin-bottom: 9px;
+}
+
+.fields .box .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.fields .box .row input{
+    display: block;
+    width: 90%;
+    margin-bottom: 0px !important; 
+}
+
+.fields .box .row .icon {
+    display: block;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.tip{
+    display: inline-block;
+    color: red;
+    margin-left: 10%;
+}
+.tip p i{
+    margin-right: 5px;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.submit button {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+#fname,#username,#email,#password,#number{
+    background-color: rgb(234, 255, 243);
+    color: black;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 90%;
+    }
+}

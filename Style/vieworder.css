@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Order style start here */
+
+.order-list{
+    background-color: rgb(238, 238, 238);
+    border: 2px solid rgb(214, 214, 214);
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 85px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.order-title{
+    display: flex;
+    align-items: stretch;
+    margin: 2% 2% 1% 2%;
+    border: 1px solid black;
+    text-align: center;
+    font-family: "Fjalla One";
+    color: black;
+    font-size: 21px;
+    background-color: rgb(233, 153, 180);
+}
+
+.id,.cname,.tprice,.address,.delivered{
+    border-right: 2px solid black;
+}
+
+.id,.delivered,.details{
+    width: 10%;
+    padding: 5px 0px;
+}
+.cname{
+    width: 20%;
+    padding: 5px 0px;
+}
+.tprice{
+    width: 15%;
+    padding: 5px 0px;
+}
+.address{
+    width: 35%;
+    padding: 5px 0px;
+}
+
+.order{
+    display: flex;
+    align-items: stretch;
+    margin: 0.8% 2%;
+    border: 1px solid black;
+    text-align: center;
+    color: black;
+    background-color: rgb(209, 209, 209);
+}
+
+.format{
+    font-size: 15px;
+    padding: 0px 5px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.bold{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.dtlbtn{
+    height:40px;
+    width:100%;
+    color: white;
+    font-family: "Noto Serif";
+    border: none;
+    background-color: rgb(65, 172, 65);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dtlbtn:hover{
+    transform: scale(1.05);
+}
+
+.greencolor{
+    color: green;
+}
+
+.redcolor{
+    color: red;
+}
+
+.rowcolor{
+    background-color: rgb(153, 152, 152);
+}
+
+/* Responsive Code */
+
+@media (max-width: 700px) {
+
+
+    .order-title{
+        font-size: 15px;
+    }
+
+    .order-list{
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .address{
+        width: 25%;
+        padding: 5px 0px;
+    }
+    
+    .delivered,.details{
+        width: 15%;
+    }
+
+
+}

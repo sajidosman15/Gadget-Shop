@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Images/background.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    width: 30%;
+    margin-top: 3%;
+    padding: 20px 40px 20px 20px;
+}
+
+.card .logo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fields .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fields .row .icon {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.remember{
+    margin: 20px 0px 10px 10px;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.submit button {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.err-message{
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-family: "Atkinson Hyperlegible";
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 90%;
+    }
+}
